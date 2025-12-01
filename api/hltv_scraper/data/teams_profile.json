@@ -1,0 +1,44 @@
+{
+    "virtus.pro": [
+        {
+            "name": "Virtus.pro",
+            "img": "https://img-cdn.hltv.org/teamlogo/yZ6Bpuui1rW3jocXQ68XgZ.svg?ixlib=java-2.1.0&s=f39be1d3e7baf30a4e7f0b1216720875",
+            "link": "/team/5378/virtuspro"
+        },
+        {
+            "name": "VP.Prodigy",
+            "img": "https://img-cdn.hltv.org/teamlogo/XeVFqoxRuwHgJKTL-BJfzH.png?ixlib=java-2.1.0&w=50&s=52dd4939e8b867d2e6778997cb0136a0",
+            "link": "/team/10864/vpprodigy"
+        },
+        {
+            "name": "VP.Angels",
+            "img": "https://img-cdn.hltv.org/teamlogo/aV5XqDzkzxQb_SwURY16YG.png?ixlib=java-2.1.0&w=50&s=a088e1faa2c5190d2507fdba9b637dd3",
+            "link": "/team/12222/vpangels"
+        },
+        {
+            "name": "Outsiders",
+            "img": "https://img-cdn.hltv.org/teamlogo/K15IzjKuVPxnoWr3J3-tJ7.png?ixlib=java-2.1.0&w=50&s=d87bd1cf1f3835f152b363eecd95e3fe",
+            "link": "/team/11595/outsiders"
+        },
+        {
+            "name": "Virtus.pro female",
+            "img": "/dynamic-svg/teamplaceholder?letter=V",
+            "link": "/team/3809/virtuspro-female"
+        },
+        {
+            "name": "Virtus.pro fe",
+            "img": "/dynamic-svg/teamplaceholder?letter=V",
+            "link": "/team/4813/virtuspro-fe"
+        },
+        {
+            "name": "Virtus.pro Staff",
+            "img": "/dynamic-svg/teamplaceholder?letter=V",
+            "link": "/team/5902/virtuspro-staff"
+        },
+        {
+            "name": "ex-Virtus.pro",
+            "img": "/dynamic-svg/teamplaceholder?letter=e",
+            "link": "/team/10549/ex-virtuspro"
+        }
+    ]
+}
