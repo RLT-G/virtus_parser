@@ -1,0 +1,19 @@
+curl http://127.0.0.1:8080/api/v1/check | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/team/info | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/team/matches | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/player/search --json '{"name":"FL1T"}' | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/player/profile --json '{"name":"FL1T", "id":"12732"}' | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/player/statistics --json '{"name":"FL1T", "id":"12732"}' | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/matches/upcoming | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/matches/details --json '{"id":"2372341","match_name":"virtuspro-vs-big-iem-dallas-2024"}' | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/tableau/ctside | jq
+
+curl -X POST http://127.0.0.1:8080/api/v1/tableau/tside | jq

@@ -1,6 +1,7 @@
 from hltv_async_api import Hltv
 from django.conf import settings
 from .hltv_scraper import HLTVScraper
+import csv
 
 
 # -------------------- START TEAM -------------------- #
@@ -49,3 +50,29 @@ def get_match_details(id: str, match_name: str):
     return data
 # -------------------- END MATCHES -------------------- #
 
+
+# -------------------- START TABLEAU -------------------- #
+def csv_to_dict_from_path(path: str) -> list[dict]:
+    with open(path, "rb") as raw:
+        start = raw.read(4)
+
+    if start.startswith(b'\xff\xfe'):
+        encoding = "utf-16"
+    elif start.startswith(b'\xfe\xff'):
+        encoding = "utf-16-be"
+    elif start.startswith(b'\xef\xbb\xbf'):
+        encoding = "utf-8-sig"
+    else:
+        encoding = "utf-8"
+
+    with open(path, "r", encoding=encoding) as f:
+        reader = csv.DictReader(f, delimiter="\t")
+
+        result = []
+        for row in reader:
+            clean = {k.strip(): (v.strip() if v is not None else "") 
+                     for k, v in row.items()}
+            result.append(clean)
+
+    return result
+# -------------------- END TABLEAU -------------------- #
